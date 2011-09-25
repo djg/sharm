@@ -1,4 +1,4 @@
-/* xhy_sharm-0.01 - Spherical Harmonic Library
+/* xhy_sharm-0.1.0 - Spherical Harmonic Library
  * 
  * This is my machine generated Spherical Harmonics library.
  *
