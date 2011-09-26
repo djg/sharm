@@ -41,7 +41,7 @@
 
 	2. Redistributions in binary form must reproduce the above copyright notice, this list
 	   of conditions and the following disclaimer in the documentation and/or other materials
-       provided with the distribution.
+	   provided with the distribution.
 
 	THIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR IMPLIED
 	WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -4076,7 +4076,7 @@ xhy_sh6_product(const float* a, const float* b, float* c)
 
 /*
 revision history:
-    0.01 (2011-09-25)
-            First released version
+	0.01 (2011-09-25)
+			First released version
 */
 #endif // !XHY_HEADER_FILE_ONLY
