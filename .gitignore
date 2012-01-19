@@ -1,0 +1,21 @@
+syntax: glob
+
+Debug/
+Release/
+Final/
+obj/
+bin/
+*.vcproj.*
+*.sln.*
+*.suo
+*.ncb
+*.pyc
+*.orig
+*.ReSharper.*
+*.csproj.user
+*.tmp_
+_ReSharper.*
+ipch/
+*.vcxproj.user
+*.sdf
+*.opensdf

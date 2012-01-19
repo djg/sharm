@@ -7,15 +7,13 @@
 #include <math.h>
 #include <d3dx9.h>
 
-#include "../xhy_sharm.c"
-
-float
+inline float
 random(float a, float b)
 {
 	return ((b-a)*((float)rand()/RAND_MAX))+a;
 }
 
-void
+inline void
 random_vec(float* v)
 {
 	float z = random(-1.0f, 1.0f);
@@ -26,7 +24,7 @@ random_vec(float* v)
 	v[0] = x; v[1] = y; v[2] = z;
 }
 
-int
+inline int
 punt(float x)
 {
 	union { float f; int i; } u = { x };
@@ -36,7 +34,7 @@ punt(float x)
 	return (i >= 0) ? i : i = 0x80000000 - i;
 }
 
-void
+inline void
 difference(float a, float b)
 {
 	int ia = punt(a);
@@ -46,34 +44,12 @@ difference(float a, float b)
 	printf("  %f [0x%08x] - %f [0x%08x] = %d\n", a, ia, b, ib, diff);
 }
 
-void
+inline void
 print(float f)
 {
 	union { float f; int i; } v = { f };
 	int i = v.i;
 	printf("f = %.17f [0x%08x]\n", f, i);
 }
-
-typedef void (*shevalfn)(float, float, float, float*);
-
-shevalfn sheval[] = 
-{
-	0, 0, 0,
-	xhy_sh3_eval,
-	xhy_sh4_eval,
-	xhy_sh5_eval,
-	xhy_sh6_eval,
-};
-
-typedef void (*shprodfn)(const float* a, const float* b, float* c);
-
-shprodfn shprod[] =
-{
-	0, 0, 0,
-	xhy_sh3_product,
-	xhy_sh4_product,
-	xhy_sh5_product,
-	xhy_sh6_product,
-};
 
 #endif // !XHY_TEST_COMMON_H
