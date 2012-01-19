@@ -1,35 +1,39 @@
 #include "common.h"
+#include <UnitTest++/UnitTest++.h>
 
-static float s[36];
-static float t[36];
+#define XHY_HEADER_FILE_ONLY
+extern "C" {
+#include "../xhy_sharm.c"
+}
 
-static float v[3];
+#define SAMPLE_COUNT 1000000
 
-int main()
-{
-	for (int order = 3; order <= 6; order++)
-	{
-		shevalfn evalfn = sheval[order];
-		
-		for (int i = 0; i < 1000000; ++i)
+namespace {
+
+	TEST(SH3Eval) {	
+		static float s[9];
+		static float t[9];
+
+		static float v[3];
+
+		for (int i = 0; i < SAMPLE_COUNT; ++i)
 		{
 			random_vec(v);
-		
-			evalfn(v[0], v[1], v[2], s);
+
+			xhy_sh3_eval(v[0], v[1], v[2], s);
 
 			D3DXVECTOR3 d3dv(v);
-			D3DXSHEvalDirection(t, order, &d3dv);
+			D3DXSHEvalDirection(t, 3, &d3dv);
 
-			for (int i = 0; i < order*order; ++i)
+			for (int i = 0; i < 9; ++i)
 			{
-				if (s[i] != t[i])
+				CHECK_EQUAL(t[i], s[i]);
+				/*			if (s[i] != t[i])
 				{
-					printf("sh[%d]: %.17f == %.17f\n", i, s[i], t[i]);
-					difference(s[i], t[i]);
-				}
+				printf("sh[%d]: %.17f == %.17f\n", i, s[i], t[i]);
+				difference(s[i], t[i]);
+				}*/
 			}
 		}
 	}
-
-	return 0;
 }
