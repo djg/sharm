@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{39EECA31-38E5-BB4C-9C53-7EBE8617C320}</ProjectGuid>
+    <ProjectGuid>{A065DF68-BA51-654E-81FD-E0201234158B}</ProjectGuid>
     <RootNamespace>TestSharm</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -98,7 +98,7 @@
       <AdditionalIncludeDirectories>..;..\external;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>..\bin\Debug\x32\Sharm.lib;..\external\UnitTest++\bin\Debug\x32\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\external\UnitTest++\bin\Debug\x32\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)TestSharm.exe</OutputFile>
       <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
@@ -129,7 +129,7 @@
       <AdditionalIncludeDirectories>..;..\external;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>..\bin\Debug\x64\Sharm.lib;..\external\UnitTest++\bin\Debug\x64\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\external\UnitTest++\bin\Debug\x64\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)TestSharm.exe</OutputFile>
       <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
@@ -160,7 +160,7 @@
       <AdditionalIncludeDirectories>..;..\external;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>..\bin\Release\x32\Sharm.lib;..\external\UnitTest++\bin\Release\x32\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\external\UnitTest++\bin\Release\x32\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)TestSharm.exe</OutputFile>
       <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
@@ -193,7 +193,7 @@
       <AdditionalIncludeDirectories>..;..\external;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>..\bin\Release\x64\Sharm.lib;..\external\UnitTest++\bin\Release\x64\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\external\UnitTest++\bin\Release\x64\UnitTest++.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)TestSharm.exe</OutputFile>
       <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
