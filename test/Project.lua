@@ -10,7 +10,7 @@ project "TestSharm"
 	language "C++"
 	includedirs { "../", "../external", "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include" }
 	files { "*.h", "*.cpp", "../xhy_sharm.c" }
-	links { "Sharm", "UnitTest++", "d3dx9" }
+	links { "UnitTest++", "d3dx9" }
 
 	DefaultConfig()
 
