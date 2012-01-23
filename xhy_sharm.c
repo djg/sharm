@@ -62,7 +62,7 @@
 
 /*
  * To get a header file for this, either cut and paste the header,
- * or create stb_image.h, #define XHY_HEADER_FILE_ONLY, and
+ * or create xhy_sharm.h, #define XHY_HEADER_FILE_ONLY, and
  * then include xhy_sharm.c from it.
  */
 
